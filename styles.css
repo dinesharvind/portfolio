@@ -1,0 +1,657 @@
+/* General Styling */
+body {
+  background-color: #272829;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+}
+
+/* Top Bar Styling */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #272829;
+  border-bottom: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 6px;
+  padding-right: 12px; 
+  z-index: 1000;
+}
+
+.name {
+  margin-left: 6px;
+}
+
+.resume {
+  margin-right: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* Dinesh Arvind */
+.heroname1 {
+  position: absolute;
+  width: 429px;
+  height: 310px;
+  left: 12px;
+  top: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 155px;
+  color: #ffffff;
+}
+.heroname2 {
+  position: absolute;
+  width: 412px;
+  height: 155px;
+  left: 12px;
+  top: 199px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 155px;
+  color: #ffffff;
+}
+.heroname1::first-letter {
+  color: #FFE700; /* Color for 'D' */
+}
+.heroname2::first-letter {
+  color: #FFE700; /* Color for 'A' */
+}
+
+.verticallinehero {
+  position: absolute;
+  width: 255px;
+  height: 0px;
+  right: 440px;
+  top: 200px;
+  border: 1px solid #FFE700;
+  transform: rotate(90deg);
+}
+
+.bio {
+  position: absolute;
+  width: 464px;
+  height: 203px;
+  right: 80px;
+  top: 84px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.line1, .line2, .line3, .line4, .line5, .line6,.line7 ,.line8 ,.line9 ,.line10{
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  border: 1px solid #FFFFFF;
+}
+
+.line1 {
+  top: 355px;
+  z-index: 10;
+}
+.line2 {
+  top: 395px;
+  z-index: 11;
+}
+.line3 {
+  top: 845px;
+  z-index: 12;
+}
+.line4 {
+  top: 1261px;
+  z-index: 13;
+}
+.line5 {
+  top: 1301px;
+  z-index: 14;
+}
+.line6 {
+  top: 1751px;
+  z-index: 15;
+}
+.line7 {
+  top: 1791px;
+  z-index: 15;
+}
+.line8 {
+  top: 2241px;
+  z-index: 15;
+}
+.line9 {
+  top: 2680px;
+  z-index: 15;
+}
+.line10 {
+  top: 3065px;
+  z-index: 15;
+}
+
+/* Container to Clip the Orbits */
+.orbit-container {
+  position: absolute;
+  top: 395px;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+
+/* Centered Container for Sun and Orbits */
+.centered-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sun Styling */
+.sun {
+  width: 100px;
+  height: 100px;
+  background-color: #FFE700;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 231, 0, 0.8), 0 0 40px rgba(255, 231, 0, 0.6);
+  animation: pulse 2s infinite;
+  position: absolute;
+  z-index: 10;
+}
+
+/* Circular Orbits */
+.rotating-octagon {
+  border: 1px solid transparent;
+  background: linear-gradient(#272829, #272829) padding-box,
+              linear-gradient(to right, rgb(255, 255, 255), #272829) border-box;
+  border-radius: 50%; /* Ensures circular shape */
+  animation: rotate linear infinite;
+  position: absolute; /* Centers orbits around the sun */
+}
+
+
+
+/* Individual Layers with Size and Speed */
+.layer1 { width: 220px; height: 220px; animation-duration: 5s; z-index: 9; }
+.layer2 { width: 400px; height: 400px; animation-duration: 7s; animation-direction: reverse; z-index: 8; }
+.layer3 { width: 600px; height: 600px; animation-duration: 9s; z-index: 7; }
+.layer4 { width: 800px; height: 800px; animation-duration: 11s; animation-direction: reverse; z-index: 6; }
+.layer5 { width: 1000px; height: 1000px; animation-duration: 13s; z-index: 5; }
+.layer6 { width: 1200px; height: 1200px; animation-duration: 14s; animation-direction: reverse; z-index: 4; }
+.layer7 { width: 1500px; height: 1500px; animation-duration: 15s; z-index: 3; }
+.layer8 { width: 1900px; height: 1900px; animation-duration: 14s; animation-direction: reverse; z-index: 2; }
+
+
+/* Pulse Animation for Sun */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Rotation Animation for Orbits */
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.feeling-text {
+  position: absolute;
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: #FFFFFF;
+  top: 338px; /* Adjust position above line3 */
+  margin-bottom: 15px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0; /* Space between text and toggle */
+  background-color: #272829;
+  z-index: 100;
+}
+
+/* Weather Toggle */
+.weather-toggle {
+  position: absolute;
+  left: 50%;
+  top: 785px; /* Adjust position above line3 */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 237px;
+  height: 35.65px;
+  background: #272829;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+.weather-toggle .option {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  /*color: #FFFFFF;*/
+  padding: 5px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;  /* Add flex for centering */
+  align-items: center;  /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+/* Default toggle styles */
+.option {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  
+}
+
+/* Rectangle 3 */
+.sunny {
+background: #FFE700;
+border-radius: 30px;
+color: #272829;
+}
+
+
+/* Default status bar color */
+#status-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #FFE700; /* Yellow for Sunny */
+}
+
+/* Active classes for each option */
+.sunny.active{
+  background-color: #FFE700; /* Default sunny yellow */
+}
+
+/* Blue for rainy */
+.snowy.active {
+  background-color: #EB455F; 
+}
+
+/* Blue for rainy */
+.rainy.active {
+  background-color: #4f83cc; /* Light blue for rainy */
+}
+.rainy-theme {
+  color: #4f83cc;
+  background-color: #4f83cc; /* Example usage for elements with a background */
+}
+
+.myworkstab {
+  position: relative; /* Creates a context for absolutely positioned children */
+  padding: 20px; /* Add padding to ensure `.myworks` is visible within the container */
+}
+
+.myworks {
+  position: absolute;
+  top: 984px; /* Adjust these values as needed */
+  left: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 155px;
+  color: #ffffff;
+}
+
+.myworks::first-letter {
+  color: #FFE700; /* Color for 'M' */
+}
+
+/* Example styling for the other elements */
+.verticallinemyworks {
+  position: absolute;
+  width: 78px;
+  height: 0px;
+  left: 35px;
+  top: 1190px;
+  border: 1px solid #FFE700;
+  transform: rotate(90deg);
+}
+
+.workbio {
+  position: absolute;
+  width: 728px;
+  height: 58px;
+  left: 93px;
+  top: 1165px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.webcontainer {
+  position: relative;
+  overflow: hidden;
+  top: 1261px;
+  width: 100%;
+  height: 450px;
+  margin-bottom: .75rem;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-size: cover;
+  border: 1px solid var(--color-primary-light);
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+element.style.webcontainer {
+  background-image: linear-gradient(rgba(30, 30, 33, 0.867), rgba(30, 30, 33, 0.867)), url(https://cdn.wallpaper.tn/large/Wallpaper-Resident-Evil-239998.jpg);
+}
+
+.scrolling-text {
+  position: absolute;
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
+  font-size: 80px;
+  font-weight: 600;
+  color: #FFFFFF;
+  left: -1000px;
+  transform: translateX(0); /* Initial position */
+  transition: transform 0.1s linear; /* Smooth transition */
+  z-index: 50;
+  text-align: center;
+  display: flex;
+  line-height: 1;
+}
+
+.star {
+  margin: 0 80px;
+}
+
+.artcontainer {
+  position: relative;
+  overflow: hidden;
+  top: 1290px;
+  width: 100%;
+  height: 450px;
+  margin-bottom: .75rem;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-size: cover;
+  border: 1px solid var(--color-primary-light);
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+element.style.artcontainer {
+  background-image: linear-gradient(rgba(30, 30, 33, 0.867), rgba(30, 30, 33, 0.867)), url(https://wallpapercat.com/w/full/d/5/6/893-2560x1600-desktop-hd-the-last-of-us-game-background-image.jpg);
+}
+
+.scrolling-text2 {
+  position: absolute;
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
+  font-size: 80px;
+  font-weight: 600;
+  color: #FFFFFF;
+  left: -1500px;
+  transform: translateX(0); /* Initial position */
+  transition: transform 0.1s linear; /* Smooth transition */
+  z-index: 50;
+  text-align: center;
+  display: flex;
+  line-height: 1;
+}
+
+.cloud {
+  margin: 0 80px;
+}
+
+.myskillstab {
+  position: relative; /* Creates a context for absolutely positioned children */
+  padding: 20px; /* Add padding to ensure `.myworks` is visible within the container */
+}
+
+.myskills {
+  position: absolute;
+  top: 1420px; /* Adjust these values as needed */
+  left: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 155px;
+  color: #ffffff;
+}
+
+.myskills::first-letter {
+  color: #FFE700; /* Color for 'M' */
+}
+
+/* Example styling for the other elements */
+.verticallinemyskills {
+  position: absolute;
+  width: 78px;
+  height: 0px;
+  left: 35px;
+  top: 1650px;
+  border: 1px solid #FFE700;
+  transform: rotate(90deg);
+}
+
+.skillbio {
+  position: absolute;
+  width: 728px;
+  height: 58px;
+  left: 93px;
+  top: 1620px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+/* Center the table in the container */
+.table-container {
+  position: absolute;
+  top: 2690px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease-in;
+}
+
+.animated-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* Table headers and data cells styling */
+.animated-table th,
+.animated-table td {
+  padding: 1rem;
+  color: #dddddd;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent; /* Initially hidden */
+}
+
+/* Header styling */
+.animated-table th {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Animation keyframes */
+@keyframes drawBorder {
+  from {
+    border-bottom-color: transparent;
+  }
+  to {
+    border-bottom-color: #ffffff;
+  }
+}
+
+/* Add this class to trigger the animation */
+.animate-lines th,
+.animate-lines td {
+  animation: drawBorder 1s ease-in-out forwards; /* Added ease-in-out */
+}
+
+.andmore {
+  position: absolute; /* Relative to allow centering below the table */
+  top: 2990px;
+  font-size: 1.5rem;
+  width: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 1rem; /* Adds space above this element */
+  background-color: #272829;
+  z-index: 10;
+}
+
+.lets {
+  position: absolute;
+  width: 267px;
+  height: 115px;
+  left: 79px;
+  top: 3300px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 155px;
+  color: #ffffff;
+}
+.talk {
+  position: absolute;
+  width: 255px;
+  height: 155px;
+  left: 377px;
+  top: 3300px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 155px;
+  color: #ffffff;
+}
+.lets::first-letter {
+  color: #FFE700; /* Color for 'D' */
+}
+.talk::first-letter {
+  color: #FFE700; /* Color for 'A' */
+}
+
+.linkedin {
+  position: absolute;
+  left: 88px;
+  top: 3450px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.linkedin::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #FFE700;
+  transition: width 0.3s ease-in-out;
+}
+
+.linkedin:hover::after {
+  width: 100%; /* Expands the underline on hover */
+}
+
+.insta {
+  position: absolute;
+  left: 229px;
+  top: 3450px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.insta::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #FFE700;
+  transition: width 0.3s ease-in-out;
+}
+
+.insta:hover::after {
+  width: 100%; /* Expands the underline on hover */
+}
+
+.arrow {
+  color: #FFE700;
+}
+
+.drop {
+  position: absolute;
+  right: 429px;
+  top: 3320px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.mailid {
+  position: absolute;
+  right: 87px;
+  top: 3375px;
+  color: #FFE700;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.mailid::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #FFE700;
+  transition: width 0.3s ease-in-out;
+}
+
+.mailid:hover::after {
+  width: 100%; /* Expands the underline on hover */
+}
+
+.portfolio {
+  position: absolute;
+  top: 3720px;
+  text-align: right;
+  right: 0px;
+  margin-right: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFFFFF;
+}
