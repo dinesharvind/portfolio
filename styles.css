@@ -43,7 +43,7 @@ body {
   top: 40px;
   font-style: normal;
   font-weight: 600;
-  font-size: 128px;
+  font-size: clamp(24px, 5vw, 128px);
   line-height: 155px;
   color: #ffffff;
 }
@@ -55,7 +55,7 @@ body {
   top: 199px;
   font-style: normal;
   font-weight: 600;
-  font-size: 128px;
+  font-size: clamp(24px, 5vw, 128px);
   line-height: 155px;
   color: #ffffff;
 }
