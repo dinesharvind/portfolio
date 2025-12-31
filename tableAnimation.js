@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const tableContainer = document.querySelector(".table-container");
     const animatedTable = document.querySelector(".animated-table");
+    
   
     const observer = new IntersectionObserver(
       (entries) => {
@@ -17,4 +18,5 @@ document.addEventListener("DOMContentLoaded", () => {
   
     observer.observe(tableContainer);
   });
+
   
